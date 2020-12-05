@@ -10,6 +10,17 @@ Const [a,b,...arr]=source;
 
 Deconstructing 的时候可以不需要都写全所有的parameter
 
+
+### JavaScript Promise
+```markdown
+const myPromise = new Promise((resolve, reject) => {
+
+});
+
+myPromise.then(result=> {  }) //resolve成功情况下
+myPromist.catch(error => { }) //reject fail情况下
+```
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
