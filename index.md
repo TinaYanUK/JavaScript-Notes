@@ -4,6 +4,12 @@ You can use the [editor on GitHub](https://github.com/TinaYanUK/JavaScript-Notes
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+### JavaScript Notes
+Array.prototype.slice()
+Const [a,b,...arr]=source;
+
+Deconstructing 的时候可以不需要都写全所有的parameter
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
