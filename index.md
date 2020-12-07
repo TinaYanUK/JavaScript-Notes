@@ -21,6 +21,46 @@ myPromise.then(result=> {  }) //resolve成功情况下
 myPromist.catch(error => { }) //reject fail情况下
 ```
 
+### Regular Expressions:
+```markdown
+Let aString = “ccccccc”;
+Let bRegex =/xx|xx/i;
+Let result =  bRegex.test(aString); //return true or false
+```
+
+.match()
+```markdown
+"Hello, World!".match(/Hello/);// Returns ["Hello"]let ourStr = "Regular expressions";let ourRegex = /expressions/;
+ourStr.match(ourRegex);// Returns ["expressions"]
+
+Note that the .match syntax is the "opposite" of the .test method you have been using thus far:
+'string'.match(/regex/);/regex/.test('string');
+To search or extract a pattern more than once, you can use the g flag.
+let testStr = "Repeat, Repeat, Repeat";
+let repeatRegex = /Repeat/g;
+testStr.match(repeatRegex);// Returns ["Repeat", "Repeat", "Repeat"]
+The wildcard character . will match any one character. The wildcard is also called dot and period.
+let humStr = "I'll hum a song";let hugStr = "Bear hug";let huRegex = /hu./;
+huRegex.test(humStr); // Returns true
+huRegex.test(hugStr); // Returns true
+You can search for a literal pattern with some flexibility with character classes. Character classes allow you to define a group of characters you wish to match by placing them inside square ([ and ]) brackets.
+let bigStr = "big";let bagStr = "bag";let bugStr = "bug";let bogStr = "bog";let bgRegex = /b[aiu]g/;
+bigStr.match(bgRegex); // Returns ["big"]
+bagStr.match(bgRegex); // Returns ["bag"]
+bugStr.match(bgRegex); // Returns ["bug"]
+bogStr.match(bgRegex); // Returns null
+to match lowercase letters a through e you would use [a-e].
+let catStr = "cat";let batStr = "bat";let matStr = "mat";let bgRegex = /[a-e]at/;
+catStr.match(bgRegex); // Returns ["cat"]
+batStr.match(bgRegex); // Returns ["bat"]
+matStr.match(bgRegex); // Returns null
+/[0-5]/ matches any number between 0 and 5, including the 0 and 5.
+Also, it is possible to combine a range of letters and numbers in a single character set.
+let jennyStr = "Jenny8675309";let myRegex = /[a-z0-9]/ig;// matches all letters and numbers in jennyStr
+jennyStr.match(myRegex);
+```
+`jennyStr.match(myRegex);`
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
