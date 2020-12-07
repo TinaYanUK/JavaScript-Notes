@@ -59,7 +59,23 @@ Also, it is possible to combine a range of letters and numbers in a single chara
 let jennyStr = "Jenny8675309";let myRegex = /[a-z0-9]/ig;// matches all letters and numbers in jennyStr
 jennyStr.match(myRegex);
 ```
-`jennyStr.match(myRegex);`
+
+### negated character sets.
+For example, /[^aeiou]/gi matches all characters that are not a vowel. Note that characters like ., !, [, @, / and white space are matched - the negated vowel character set only excludes the vowel characters.
+
+Match Characters that Occur One or More Times
+For example, /a+/g would find one match in "abc" and return ["a"]. Because of the +, it would also find a single match in "aabc" and return ["aa"].
+
+If it were instead checking the string "abab", it would find two matches and return ["a", "a"] because the a characters are not in a row - there is a b between them. Finally, since there is no "a" in the string "bcd", it wouldn't find a match.
+
+Match Characters that Occur Zero or More Times
+The character to do this is the asterisk or star: *.
+```markdown
+let soccerWord = "gooooooooal!";let gPhrase = "gut feeling";let oPhrase = "over the moon";let goRegex = /go*/;
+soccerWord.match(goRegex); // Returns ["goooooooo"]
+gPhrase.match(goRegex); // Returns ["g"]
+oPhrase.match(goRegex); // Returns null
+```
 
 ### Markdown
 
