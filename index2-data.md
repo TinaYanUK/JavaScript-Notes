@@ -8,7 +8,7 @@
 
 .splice(index, numbers of elements)
 返回被切掉的数组
-···markdown
+```markdown
 let array = ['I', 'am', 'feeling', 'really', 'happy'];
 let newArray = array.splice(3, 2);
 // newArray equals ['really', 'happy']
