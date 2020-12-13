@@ -24,3 +24,26 @@ numbers.splice(startIndex, amountToDelete, 13, 14);
 console.log(numbers);
 // returns [ 10, 11, 12, 13, 14, 15 ]
 ```
+.slice(index to start包含, index to finish不包含)
+新建一个剪切出来的数组
+```markdown
+let weatherConditions = ['rain', 'snow', 'sleet', 'hail', 'clear'];
+let todaysWeather = weatherConditions.slice(1, 3);
+// todaysWeather equals ['snow', 'sleet'];
+// weatherConditions still equals ['rain', 'snow', 'sleet', 'hail', 'clear']
+```
+spread operator 
+```markdown
+let thisArray = [true, true, undefined, false, null];
+let thatArray = [...thisArray];
+// thatArray equals [true, true, undefined, false, null]
+// thisArray remains unchanged and thatArray contains the same elements as thisArray
+```
+indexof()确定所在数列中的index
+```markdown
+let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
+
+fruits.indexOf('dates'); // returns -1
+fruits.indexOf('oranges'); // returns 2
+fruits.indexOf('pears'); // returns 1, the first index at which the element exists
+```
