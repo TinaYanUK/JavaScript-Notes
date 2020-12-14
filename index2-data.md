@@ -62,3 +62,18 @@ function greaterThanTen(arr) {
 greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
 // returns [12, 14, 80]
 ```
+
+去掉数组中不包含的元素，运用for loop
+```markdown
+let newArray =[];
+for(let i=0;i<arr.length;i++){
+if (arr[i].indexOf(elem)===-1){
+newArray.push(arr[i]);
+}
+}
+return newArray;
+```
+
+
+greaterThanTen([2, 12, 8, 14, 80, 0, 1]);的
+greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
